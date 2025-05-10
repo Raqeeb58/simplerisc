@@ -33,7 +33,7 @@ begin
     5'b00101: begin if(a==b)flags <= 2'b01; else if(a>b) flags <= 2'b10; result = 32'b0; end
     5'b00110 : begin flags <= 2'b0; result = a & b ; end //and
     5'b00111 : begin flags <= 2'b0; result =  a| b ; end  //or
-    5'b01000 : begin flags <= 2'b0; result = ~a ; end //not
+    5'b01000 : begin flags <= 2'b0; result = ~b ; end //not
     5'b01001: begin flags <= 2'b0; result = b; end //mov
     5'b01010: begin flags <= 2'b0; result = a << b; end //lsl
     5'b01011: begin flags <= 2'b0; result = a>> b; end  //lsr
